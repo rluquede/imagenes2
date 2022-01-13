@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media(min-width:1024px) {
+            img {
+                width: 630px;
+            }
+        }
+
+        @media(min-width:512px) and (max-width: 1024px) {
+            img {
+                width: 450px;
+            }
+        }
+
+        @media(min-width:256px) and (max-width: 512px) {
+            img {
+                width: 200px;
+            }
+        }
+
+        @media(max-width:256px) {
+            img {
+                width: 110px;
+            }
+        }
+
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels1O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels1G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels1P.jpg">
+            <img src="./img/pexels10M.jpg" alt="Codigo JS">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels2O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels2G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels2P.jpg">
+            <img src="./img/pexels2M.jpg" alt="Escritorio con dispositivos">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels3O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels3G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels3P.jpg">
+            <img src="./img/pexels3M.jpg" alt="Escritorio blanco">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels4O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels4G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels4P.jpg">
+            <img src="./img/pexels4M.jpg" alt="Compra online">
+        </picture>
+        <picture>
+            <source media="(min-width: 512px)" srcset="./img/pexels5G.jpg">
+            <img src="./img/pexels5M.jpg" alt="Diseño web">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels6O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels6G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels6P.jpg">
+            <img src="./img/pexels6M.jpg" alt="Ordenador navegando">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels7O.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels7P.jpg">
+            <img src="./img/pexels7M.jpg" alt="icono diseño web">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels8O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels8G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels8P.jpg">
+            <img src="./img/pexels8M.jpg" alt="Ordenador navegando">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels9O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels9G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels9P.jpg">
+            <img src="./img/pexels9M.jpg" alt="letras SEO">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels10O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels10G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels10P.jpg">
+            <img src="./img/pexels10M.jpg" alt="teclado con una tablet">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels11O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels11G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels11P.jpg">
+            <img src="./img/pexels11M.jpg" alt="gotas en una tela de araña">
+        </picture>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/pexels12O.jpg">
+            <source media="(min-width: 512px) and (max-width: 1024px)" srcset="./img/pexels12G.jpg">
+            <source media="(max-width: 256px)" srcset="./img/pexels12P.jpg">
+            <img src="./img/pexels12M.jpg" alt="persona navegando">
+        </picture>
+    </div>
+
+    <table>
+        <tr>
+            <th>average size</th>
+            <th>Image format</th>
+            <th>loading time</th>
+        </tr>
+        <tr>
+            <td>1475KiB</td>
+            <td>JPG, PNG, GIF</td>
+            <td>9.1s</td>
+        </tr>
+    </table>
+</body>
+
+</html>
